@@ -41,6 +41,11 @@ if (_part == "" && _damage > 0.1) then
 // Let ACE medical handle the rest (inc return value) if it's running
 if (A3A_hasACEMedical) exitWith {};
 
+_damage = 0.5 * _damage;
+
+if (isPlayer) then {
+	_damage = 0.5 * _damage;
+};
 
 private _makeUnconscious =
 {
