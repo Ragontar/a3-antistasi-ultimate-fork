@@ -43,7 +43,7 @@ if (A3A_hasACEMedical) exitWith {};
 
 _damage = 0.5 * _damage;
 
-if (isPlayer) then {
+if (isPlayer _unit) then {
 	_damage = 0.5 * _damage;
 };
 
